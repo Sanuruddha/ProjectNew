@@ -24,5 +24,7 @@
                 <li id="logout"><a href="logout.jsp">Logout</a></li>
             </ul>
         </div>
+        <div>
+            </div>
     </body>
 </html>
