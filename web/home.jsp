@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="home.css">
     </head>
     <body>
+        <div id="logo-area">
+         <img style="margin:0px 400px" src="Pictures/Logo.jpg" alt="Smiley face" height="15%" width="27%"> 
+        </div>
         <div>
             <ul id="home-navbar">
                 <li><a class="active" href="#home">Home</a></li>

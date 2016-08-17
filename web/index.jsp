@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <div ID="top">
+    <div id="top-area">
+        
+    <div id="logo-area">
+         <img style="margin:0px 300px" src="Pictures/Logo.jpg" alt="Smiley face" height="14%" width="30%"> 
+    </div>
     <div ID="index-navbar">
         <ul id="home-navbar">
             <li><a class="active" href="#home">Home</a></li>
@@ -18,6 +23,8 @@
             </li>
             <li><a href="#news">Forum</a></li>
         </ul>
+    </div>
+ 
     </div>
     <div ID="loginform">
         <form action="loginprocess.jsp" method="post"> 
