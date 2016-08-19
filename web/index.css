@@ -25,7 +25,10 @@
     float:right;
     float:top;
 }
-
+#para{
+    width:160px;
+    margin:0px 90px;
+}
 #label1{
     margin:0px 20px;
 }
@@ -68,8 +71,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
-
-
 
 home-navbar,li a {
     display: block;

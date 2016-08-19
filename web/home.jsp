@@ -6,11 +6,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="home.css">   
     </head>
     <body>
         <div id="logo-area">
-         <img style="margin:0px 400px" src="Pictures/Logo.jpg" alt="Smiley face" height="15%" width="27%"> 
+         <img style="margin:0px 500px;" src="Pictures/Logo.jpg" alt="Smiley face" height="15%" width="27%"> 
         </div>
         <div>
             <ul id="home-navbar">
@@ -27,7 +27,11 @@
                 <li id="logout"><a href="logout.jsp">Logout</a></li>
             </ul>
         </div>
+            
         <div>
+            <div id="chat-box">
+                <%@include file="chatarea.html"%>
             </div>
+        </div>
     </body>
 </html>
