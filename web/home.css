@@ -109,6 +109,7 @@ li.dropdown {
 }
 
 #buttonlink:hover{
+    cursor: pointer;
     color: #000;
-    background: cornflowerblue;
+    background: #448af4;
 }
