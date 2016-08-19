@@ -1,5 +1,6 @@
 
 #chat-area{
+    display:none;
     border-radius: 6px;
     background-color:black;
     width:250px;

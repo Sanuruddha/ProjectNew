@@ -6,7 +6,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link rel="stylesheet" href="home.css">   
+        <link rel="stylesheet" href="home.css">
+        <script type="text/javascript">
+            function openchat() {
+                var e = document.getElementById("chat-area");
+                e.style.display = 'block';
+            }
+        </script>
     </head>
     <body>
         <div id="logo-area">
@@ -30,6 +36,7 @@
             
         <div>
             <div id="chat-box">
+                <a id="buttonlink" onclick="openchat()">Chat</a>
                 <%@include file="chatarea.html"%>
             </div>
         </div>

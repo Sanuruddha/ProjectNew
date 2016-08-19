@@ -1,22 +1,21 @@
 <html>
-<head>
-    <link rel="stylesheet" href="chat.css">
-    <script type="text/javascript">
-        function closechat(id){
-            var e=document.getElementById(id);
-            if(e.style.display==='block')
+    <head>
+        <link rel="stylesheet" href="chat.css">
+        <script type="text/javascript">
+            function closechat() {
+                var e = document.getElementById("chat-area");
                 e.style.display = 'none';
-        }
-    </script>
-</head>
-<div>
+            }
+        </script>
+    </head>
+    
     <div id="chat-area">
         <div id="chat-header">
             <div id="chat-title">
                 Chat with your friends!
             </div>
-            <div id="close-button" onclick="closechat(chat-box)">
-               &#10006
+            <div id="close-button" onclick="closechat()">
+                &#10006    
             </div>
         </div>
         
@@ -28,5 +27,5 @@
             </div>
         </div>
     </div>
-</div>
+
 </html>
