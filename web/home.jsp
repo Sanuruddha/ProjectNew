@@ -6,13 +6,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link rel="stylesheet" href="home.css">
-        <script type="text/javascript">
-            function openchat() {
-                var e = document.getElementById("chat-area");
-                e.style.display = 'block';
-            }
-        </script>
+        <link rel="stylesheet" href="styles/home.css">
+        <script type="text/javascript" src="scripts/home.js"></script>
     </head>
     <body>
         <div id="logo-area">
