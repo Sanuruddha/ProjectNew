@@ -1,3 +1,9 @@
+#send-button{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:25%;
+}
 
 #chat-area{
     display:none;
@@ -15,7 +21,9 @@
 #chat-input{
     position:absolute;
     bottom:0;
-    width:67%;
+    width:70%;
+    height:30px;
+    overflow-wrap: break-word;
 }
 #chat-header{
     border-top-left-radius: 6px;
@@ -53,7 +61,7 @@
 }
 
 #chat-content{
-    
+    position:relative;
     background-color: #f2f2f2;
     width:70%;
     height:100%;

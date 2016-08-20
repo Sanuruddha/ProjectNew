@@ -1,9 +1,21 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles/chat.css">
-        <script type="text/javascript" src="scripts/chat.js"></script> 
+        <script type="text/javascript" src="scripts/chat.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#send-button").click(function () {
+                    var msg=$("#chat-input").val();
+                    $.post("post.php", {text: msg});
+                    window.alert(msg);
+                    $("#chat-input").val('');
+ 
+                });
+            });
+        </script>
     </head>
-    
+
     <div id="chat-area">
         <div id="chat-header">
             <div id="chat-title">
@@ -13,10 +25,11 @@
                 &#10006    
             </div>
         </div>
-        
+
         <div id="chat-body">
             <div id="chat-content">
-                <input id="chat-input" type="text">
+                <textarea id="chat-input"></textarea>
+                <button id="send-button">Send</button>
             </div>
             <div id="chat-list">
             </div>

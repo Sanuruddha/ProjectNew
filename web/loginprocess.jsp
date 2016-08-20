@@ -8,9 +8,11 @@
 
     if (status) {
         session.setAttribute("session", "TRUE");
-        RequestDispatcher rd = request.getRequestDispatcher("home.jsp");
-        rd.forward(request, response);
-    } else {
+        session.setAttribute("email", request.getParameter("email"));
+%>
+<jsp:forward page="starter.jsp" />  
+<%
+} else {
 %>  
 <jsp:include page="index.jsp"></jsp:include>  
 <%
