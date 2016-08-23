@@ -34,6 +34,8 @@
             <input ID="password_field" type="password" name="password"/>
             <input type="submit" value="login"/>
             <font color="red"><p ID="para"></p></font>
+            <div class="links"><a href="recoveraccount.jsp">Forgot your password?</a></div>
+            <div class="links"><a href="register.jsp">Create account</a></div>
         </form>
     </div>
 </div>
