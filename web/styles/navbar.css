@@ -3,7 +3,7 @@
     float:bottom;
     
 }
-home-navbar,li a {
+home-navbar {
     display: block;
     color: white;
     text-align: center;
