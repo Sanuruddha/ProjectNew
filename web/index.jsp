@@ -1,8 +1,9 @@
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-
+<html>
 <head>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/loginform.css">
 </head>
 <div ID="top">
     <div id="top-area">
@@ -10,37 +11,13 @@
     <div id="logo-area">
          <img style="margin:0px 300px" src="Pictures/Logo.jpg" alt="Smiley face" height="14%" width="30%"> 
     </div>
-    <div ID="index-navbar">
-        <ul id="home-navbar">
-            <li><a class="active" href="#home">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Diseases</a>
-                <div class="dropdown-content">
-                    <a href="#">Cancer</a>
-                    <a href="#">Diabetes</a>
-                    <a href="#">HIV</a>
-                </div>
-            </li>
-            <li><a href="#news">Forum</a></li>
-        </ul>
-    </div>
+        <%@include file="navbar.html" %>
  
     </div>
-    <div ID="loginform">
-        <form action="loginprocess.jsp" method="post"> 
-            <div ID="label1"><font color="black">Email:</font></div>
-            <input ID="email_field" type="text" name="email"/>
-            <div ID="label2"><font color="black">Password:<font></div>
-            <input ID="password_field" type="password" name="password"/>
-            <input type="submit" value="login"/>
-            <font color="red"><p ID="para"></p></font>
-            <div class="links"><a href="recoveraccount.jsp">Forgot your password?</a></div>
-            <div class="links"><a href="register.jsp">Create account</a></div>
-        </form>
-    </div>
+        <%@include file="loginform.html" %>
 </div>
 
-
+</html>
 
 
 
