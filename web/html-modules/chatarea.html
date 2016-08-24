@@ -7,10 +7,9 @@
             $(document).ready(function () {
                 $("#send-button").click(function () {
                     var msg=$("#chat-input").val();
-                    $.post("post.php", {text: msg});
+                    $.post("chatprocess.php", {text: msg});
                     window.alert(msg);
                     $("#chat-input").val('');
- 
                 });
             });
         </script>

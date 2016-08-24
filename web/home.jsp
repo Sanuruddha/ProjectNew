@@ -20,7 +20,7 @@
         <%--==============================================================================================--%>
 
         <%-- navigation bar --%>
-        <%@include file="navbar.html"%>
+        <%@include file="html-modules/navbar.html"%>
         <%--========================--%>
        
         <%--chat box goes here--%>
@@ -28,7 +28,7 @@
         <div>
             <div id="chat-box">
                 <a id="buttonlink" onclick="openchat()">Chat</a>
-                <%@include file="chatarea.html"%>
+                <%@include file="html-modules/chatarea.html"%>
             </div>
         </div>
         <%--==================================================--%>
