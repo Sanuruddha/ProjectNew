@@ -10,7 +10,7 @@ public class LoginDao {
         try {
             Connection con = ConnectionProvider.getCon();
        
-            PreparedStatement ps=con.prepareStatement("SELECT * FROM user WHERE Email=? AND Pass=?");  	
+            PreparedStatement ps=con.prepareStatement("SELECT * FROM Users WHERE Email=? AND Pass=?");  	
             
             
             ps.setString(1, bean.getEmail());
