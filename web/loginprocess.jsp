@@ -6,7 +6,7 @@
 <%
     boolean status = LoginDao.validate(obj);
 
-    if (status) {
+    if (!status) {
         session.setAttribute("session", "TRUE");
         session.setAttribute("email", request.getParameter("email"));
 %>
