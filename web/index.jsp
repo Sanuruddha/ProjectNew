@@ -1,10 +1,12 @@
-
 <html>
 <head>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/loginform.css">
+    <script src="scripts/registerform.js"></script>
+    <link rel="stylesheet" href="styles/registerform.css">
 </head>
+<%@include file="html-modules/registerform.html"%>
 <div ID="top">
     <div id="top-area">
         

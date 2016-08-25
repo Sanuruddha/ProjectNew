@@ -2,15 +2,15 @@
     width:160px;
     margin:0px 90px;
 }
-#label1{
+#login-label1{
     margin:0px 20px;
 }
 
-#label2{
+#login-label2{
     margin:0px 20px;
 }
 
-input[type=text], select {
+#login-email {
     width: 90%;
     padding: 5px 15px;
     margin: 3px 17px;
@@ -19,7 +19,7 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-input[type=password], select {
+#login-password{
     width: 90%;
     padding: 5px 15px;
     margin: 3px 17px;
@@ -30,7 +30,7 @@ input[type=password], select {
 }
 
 
-input[type=submit] {
+#login-submit{
     width: 70%;
     background-color: #4CAF50;
     color: white;
@@ -41,7 +41,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+#login-submit:hover {
     background-color: #45a049;
 }
 

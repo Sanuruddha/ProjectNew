@@ -7,9 +7,18 @@
             $(document).ready(function () {
                 $("#send-button").click(function () {
                     var msg=$("#chat-input").val();
-                    $.post("chatprocess.php", {text: msg});
-                    window.alert(msg);
                     $("#chat-input").val('');
+                    $.ajax({
+                        type: 'post',
+                        url: 'chatprocess',
+                        data: ({msg: msg}),
+                        success: function (data) {
+                            alert(data);
+                        },
+                        error: function () {
+                            alert('error');
+                        }
+                    });
                 });
             });
         </script>
@@ -34,5 +43,4 @@
             </div>
         </div>
     </div>
-
 </html>

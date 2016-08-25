@@ -22,8 +22,9 @@
     position:absolute;
     bottom:0;
     width:70%;
-    height:30px;
-    overflow-wrap: break-word;
+    max-height: 120px;
+    resize: none;
+    
 }
 #chat-header{
     border-top-left-radius: 6px;
