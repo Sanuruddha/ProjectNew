@@ -1,8 +1,12 @@
 #logo-area{
     float:top;
     width:100%;
-    padding:43px;
+    padding-bottom: 43px;
     
+}
+
+#top{
+    width:100%;
 }
 
 #loginform{

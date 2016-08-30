@@ -1,3 +1,26 @@
+.validate-icon{
+    
+    width: 17px;
+    height: 17px;
+    color:white;
+    background: red;
+    border-width:3px;
+    line-height: 1;
+    font-weight: bold;
+    border-style: solid;
+    border-color: white;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+
+.validate-icon:hover{
+    cursor: pointer;
+    background-color: #ff6666;
+}
+
 #register-form{
     border-radius: 10px;
     background-color: #333;
@@ -12,7 +35,7 @@
 #register-label1,#register-label2,#register-label3,#register-label4,#register-label5{
     margin:3px;
     color:#f2f2f2;
-    width:125px;
+    width:120px;
 }
 
 #register-submit{

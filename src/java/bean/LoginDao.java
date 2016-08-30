@@ -6,11 +6,10 @@ public class LoginDao {
 
     public static boolean validate(LoginBean bean) {
         boolean status = false;
-
         try {
             Connection con = ConnectionProvider.getCon();
        
-            PreparedStatement ps=con.prepareStatement("SELECT * FROM Users WHERE Email=? AND Pass=?");  	
+            PreparedStatement ps=con.prepareStatement("SELECT * FROM users WHERE Email=? AND Password=?");  	
             
             
             ps.setString(1, bean.getEmail());
@@ -19,7 +18,6 @@ public class LoginDao {
             ResultSet rs = ps.executeQuery();
             
             status = rs.next();
-
         } catch (Exception e) {
         }
         return status;

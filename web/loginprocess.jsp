@@ -4,11 +4,11 @@
 <jsp:setProperty property="*" name="obj"/> 
 
 <%
-    boolean status = LoginDao.validate(obj);
-
-    if (!status) {
+    boolean status= LoginDao.validate(obj);
+    if (status){
         session.setAttribute("session", "TRUE");
         session.setAttribute("email", request.getParameter("email"));
+        
 %>
 <jsp:forward page="starter.jsp" />  
 <%

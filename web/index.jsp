@@ -11,7 +11,7 @@
     <div id="top-area">
         
     <div id="logo-area">
-         <img style="margin:0px 400px;" src="Pictures/Logo.jpg" alt="Smiley face" height="15%" width="27%"> 
+         <img style="margin:0px 400px;height:15%;width:27%" src="Pictures/Logo.jpg" alt="Logo"> 
     </div>
         <%@include file="html-modules/navbar.html" %>
  
