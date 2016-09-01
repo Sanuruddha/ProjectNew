@@ -10,7 +10,6 @@
         session.setAttribute("email", request.getParameter("email"));
         
 %>
-<%@include file="checkLogin.jsp"%>
 <jsp:forward page="home.jsp"></jsp:forward>
 <%
 } else {

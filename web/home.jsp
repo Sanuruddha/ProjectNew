@@ -10,6 +10,7 @@
         <script type="text/javascript" src="scripts/home.js"></script>
     </head>
     <body>
+        <%@include file="checkLogin.jsp"%>
         <%-- Logon area div tag --%>
         <%------------------------%>
         <%------------------------%>
