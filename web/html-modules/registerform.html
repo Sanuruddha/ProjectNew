@@ -19,7 +19,7 @@
                     </tr> 
                     <tr>
                         <td><div ID="register-label3">Password:</div></td>
-                        <td><input ID="password-field" type="password" name="password"/></td>
+                        <td><input ID="password-field" type="password" name="password" onkeyup="validatePassword()"/></td>
                         <td><div class="before-validation" ID="password-val-icon"></div></td>
                     </tr>
                     <tr>
@@ -29,14 +29,12 @@
                     </tr>
                     <tr>
                         <td><div ID="register-label5">Select-category:</div></td>
-                        <td><table>
-                                <tr>
-                                    <td>radio1<input ID="radio1" type="radio" name="radio1"/></td>
-                                </tr>
-                                <tr>
-                                    <td>radio2<input ID="radio2" type="radio" name="radio2"/></td>
-                                </tr>
-                            </table></td>
+                        <td><select>
+                                <option value="regular">Regular</option>
+                                <option value="doner">Donor</option>
+                                <option value="researcher">Researcher</option>
+                                <option value="medical-center">Medical-Center</option>
+                            </select></td>
                     </tr>
                 </table>
                 <input id="register-submit" type="submit" value="Register"/>

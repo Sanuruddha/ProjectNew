@@ -18,6 +18,16 @@ function validateMyForm() {
     }
 }
 
+function validatePassword(){
+    var password=document.getElementById("password-field").value;
+    if(password.length<6){
+        password=document.getElementById("password-val-icon").className="invalid";
+    }
+    else{
+        password=document.getElementById("password-val-icon").className="valid";
+    }
+}
+
 function validateEmail() {
     var email = document.getElementById("email-field").value;
     var atposition = email.indexOf("@");
