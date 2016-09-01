@@ -13,10 +13,9 @@ function validateMyForm() {
     var pw = document.getElementById("password-field").value;
     var rpw = document.getElementById("repassword-field").value;
     if (pw !== rpw) {
-        window.alert("Passwords do not match. Try again");
+        document.getElementById("repassword-val-icon").className = "invalid";
         return false;
     }
-
 }
 
 function validateEmail() {
@@ -24,10 +23,9 @@ function validateEmail() {
     var atposition = email.indexOf("@");
     var dotposition = email.lastIndexOf(".");
     if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= email.length) {
-        document.getElementById("email-val-icon").className = "validate-icon-show";
+        document.getElementById("email-val-icon").className = "invalid";
     } else {
-        document.getElementById("email-val-icon").className = "validate-icon";
-      
+        document.getElementById("email-val-icon").className = "valid";
     }
 }
 
