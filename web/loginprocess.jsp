@@ -13,9 +13,8 @@
 <jsp:forward page="home.jsp"></jsp:forward>
 <%
 } else {
+session.setAttribute("invalidlogin","TRUE");
+}
 %>  
 <jsp:forward page="index.jsp"></jsp:forward>  
-<%
-        out.print("<script>document.getElementById('para').innerHTML = 'Wrong credentials!';</script>");
-    }
-%>  
+ 
