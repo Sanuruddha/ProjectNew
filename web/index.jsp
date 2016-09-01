@@ -22,7 +22,7 @@
         <%
             if (session.getAttribute("redirect") != null) {
                 if (session.getAttribute("redirect").equals("TRUE")) {
-                    out.println("<script>document.getElementById('para').innerHTML = 'You must login first!';</script>");
+                    out.println("<script>document.getElementById('para').innerHTML = 'You must login first!!';</script>");
                     session.setAttribute("redirect","FALSE");
                 }
             }
