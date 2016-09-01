@@ -10,11 +10,12 @@
         session.setAttribute("email", request.getParameter("email"));
         
 %>
-<jsp:forward page="starter.jsp" />  
+<%@include file="checkLogin.jsp"%>
+<jsp:forward page="home.jsp"></jsp:forward>
 <%
 } else {
 %>  
-<jsp:include page="index.jsp"></jsp:include>  
+<jsp:forward page="index.jsp"></jsp:forward>  
 <%
         out.print("<script>document.getElementById('para').innerHTML = 'Wrong credentials!';</script>");
     }

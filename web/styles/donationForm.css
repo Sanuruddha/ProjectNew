@@ -1,0 +1,14 @@
+#donation-form{
+    height:300px;
+    width:400px;
+    border-radius: 5px;
+    background-color: #666;
+    color:#f9f9f9;
+    text-align: center;
+    padding:10px;
+}
+
+#donation-form input{
+    margin:10px 10px;
+    z-index: 0;
+}
