@@ -2,13 +2,14 @@
     height:300px;
     width:400px;
     border-radius: 5px;
-    background-color: #666;
+    background-color:  #7c7a7a;
     color:#f9f9f9;
     text-align: center;
     padding:10px;
 }
 
-#donation-form input{
+#donation-form input,select{
     margin:10px 10px;
     z-index: 0;
 }
+

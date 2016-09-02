@@ -15,6 +15,7 @@
                 </div>
             </li>
             <li><a href="forum.jsp">Forum</a></li>
+            <li><a href="blog.jsp">Blog</a></li>
             <li class="dropdown"><a href="#">Donations</a>
                 <div class="dropdown-content">
                     <a href="donationSignUp.jsp">Sign up for donate</a>
