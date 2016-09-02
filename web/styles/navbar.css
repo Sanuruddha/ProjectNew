@@ -1,19 +1,6 @@
 #index-navbar{
     width:100%;
-    float:bottom;
-    
-    
-}
-home-navbar {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 0px 0px;
-    text-decoration: none;
-}
-
-home-navbar,li a:hover {
-    background-color: #111;
+    float:bottom;     
 }
 
 #home-navbar {
@@ -22,6 +9,9 @@ home-navbar,li a:hover {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+}
+#home-navbar li:hover{
+    background-color: #292929;
 }
 
 #home-navbar li {

@@ -2,10 +2,11 @@
     height:300px;
     width:400px;
     border-radius: 5px;
-    background-color:  #7c7a7a;
+    background-color: #414141;
     color:#f9f9f9;
     text-align: center;
     padding:10px;
+    opacity: 0.95;
 }
 
 #donation-form input,select{
