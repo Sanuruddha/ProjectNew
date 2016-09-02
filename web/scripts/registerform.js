@@ -39,16 +39,39 @@ function validateEmail() {
 }
 
 function processSelect(value) {
-    if (value === "medical-center") {
-        var input = document.createElement("input");
-        var label=document.createElement("div");
-        input.type = "text";
-        input.name = "registration-number";
-        label.innerHTML="Registration No.";
-        if (document.getElementsByName("registration-number").length === 0) {
-            document.getElementById("additional-input").appendChild(input);
-            document.getElementById("additional-label").appendChild(label);
+    var input = document.createElement("input");
+    var label = document.createElement("div");
+    input.type = "text";
+    var inputParent = document.getElementById("additional-input");
+    var labelParent = document.getElementById("additional-label");
+    if (inputParent.childElementCount > 0) {
+        if(value==="regular"){
+            inputParent.removeChild(inputParent.childNodes[0]);
+            labelParent.removeChild(labelParent.childNodes[0]);
         }
-        
+        if (value === "medical-center") {
+            input.name = "reg-number";
+            label.innerHTML = "Registration No.:";
+            inputParent.replaceChild(input, inputParent.childNodes[0]);
+            labelParent.replaceChild(label, labelParent.childNodes[0]);
+        } else if (value === "researcher") {
+            input.name = "id-number";
+            label.innerHTML = "ID No.:";
+            inputParent.replaceChild(input, inputParent.childNodes[0]);
+            labelParent.replaceChild(label, labelParent.childNodes[0]);
+        }
+    }
+    else{
+        if (value === "medical-center") {
+            input.name = "reg-number";
+            label.innerHTML = "Registration No.:";
+            inputParent.appendChild(input);
+            labelParent.appendChild(label);
+        } else if (value === "researcher") {
+            input.name = "id-number";
+            label.innerHTML = "ID No.:";
+            inputParent.appendChild(input);
+            labelParent.appendChild(label);
+        }
     }
 }
