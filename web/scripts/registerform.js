@@ -49,7 +49,7 @@ function processSelect(value) {
             inputParent.removeChild(inputParent.childNodes[0]);
             labelParent.removeChild(labelParent.childNodes[0]);
         }
-        if (value === "medical-center") {
+        if (value ==="medical-center") {
             input.name = "reg-number";
             label.innerHTML = "Registration No.:";
             inputParent.replaceChild(input, inputParent.childNodes[0]);
