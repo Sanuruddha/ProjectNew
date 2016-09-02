@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="styles/navbar.css">
         <script type="text/javascript" src="scripts/home.js"></script>
     </head>
-    <body>
+    <body style="background-image:url('Pictures/background.jpg')">
         <%@include file="checkLogin.jsp"%>
         <%-- Logon area div tag --%>
         <%------------------------%>

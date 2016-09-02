@@ -6,7 +6,7 @@
         <script src="scripts/registerform.js"></script>
         <link rel="stylesheet" href="styles/registerform.css">
     </head>
-
+<body style="background-image:url('Pictures/background.jpg')">
     <%@include file="html-modules/registerform.html"%>
 
     <div ID="top">
@@ -34,7 +34,7 @@
             }
         %>
     </div>
-
+</body>
 </html>
 
 

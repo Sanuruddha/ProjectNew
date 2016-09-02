@@ -29,11 +29,14 @@
                     </tr>
                     <tr>
                         <td><div ID="register-label5">Select-category:</div></td>
-                        <td><select>
+                        <td><select onchange="processSelect(this.value)">
                                 <option value="regular">Regular</option>
                                 <option value="researcher">Researcher</option>
                                 <option value="medical-center">Medical-Center</option>
                             </select></td>
+                    </tr>
+                    <tr><td><div id="additional-label"></div></td>
+                        <td><div id="additional-input"></div></td>
                     </tr>
                 </table>
                 <input id="register-submit" type="submit" value="Register"/>
