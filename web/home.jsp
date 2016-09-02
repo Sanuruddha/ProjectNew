@@ -23,7 +23,7 @@
         
         <nav>
         <%-- navigation bar --%>
-        <%@include file="html-modules/navbar.html"%>
+        <%@include file="navbar.jsp"%>
         <%--========================--%>
         </nav>
         <%--chat box goes here--%>

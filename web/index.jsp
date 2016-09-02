@@ -15,7 +15,7 @@
             <div id="logo-area">
                 <img style="margin:0px 400px;height:15%;width:27%" src="Pictures/Logo.jpg" alt="Logo"> 
             </div>
-            <%@include file="html-modules/navbar.html" %>
+            <%@include file="navbar.jsp" %>
 
         </div>
         <%@include file="html-modules/loginform.html" %>
@@ -26,7 +26,6 @@
                     session.setAttribute("redirect","FALSE");
                 }
             }
-
             if (session.getAttribute("invalidlogin") != null) {
                 if (session.getAttribute("invalidlogin").equals("TRUE")) {
                     out.println("<script>document.getElementById('para').innerHTML = 'Wrong credentials!';</script>");
