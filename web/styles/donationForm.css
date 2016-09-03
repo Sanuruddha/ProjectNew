@@ -14,3 +14,19 @@
     z-index: 0;
 }
 
+#donation-form input[type="submit"]{
+    border: #45a049;
+    border-style: outset;
+    border-width:1px;
+    padding: 5px 20px;
+    border-radius: 6px;
+    color: white;
+    background-color: #4CAF50;
+}
+
+#donation-form input[type="submit"]:hover{
+    background-color: #45a049;
+}
+#donation-form input[type="submit"]:active{
+    border-style: inset;
+}

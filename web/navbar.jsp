@@ -19,7 +19,7 @@
             <li class="dropdown"><a href="#">Donations</a>
                 <div class="dropdown-content">
                     <a href="donationSignUp.jsp">Sign up for donate</a>
-                    <a href="#">Sign up for aquire</a>
+                    <a href="acquisitionSignUp.jsp">Sign up for acquire</a>
                 </div>
             </li>
             <li id="logout"><a href="logout.jsp">Logout</a></li>
