@@ -59,12 +59,23 @@
     position: absolute;
     left: 328px;
     width:130px;
+    height:120px;
 }
 
 #submenu-spawn a{
     padding: 10px 10px;
     display:block;
     text-decoration: none;
-    background-color: whitesmoke;
+    background-color: #f9f9f9;
     color:black;
+    min-width: 130px;
+}
+
+.disease-links:after{
+    content:'\003E';
+    float:right;
+}
+
+#submenu-spawn a:hover{
+    background-color: #f1f1f1;
 }

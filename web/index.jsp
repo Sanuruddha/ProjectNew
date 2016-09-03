@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/navbar.css">
         <link rel="stylesheet" href="styles/loginform.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="scripts/registerform.js"></script>
         <script type="text/javascript" src="scripts/navbar.js"></script>
         <link rel="stylesheet" href="styles/registerform.css">

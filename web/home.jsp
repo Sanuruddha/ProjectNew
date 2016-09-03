@@ -7,6 +7,7 @@
         <title>JSP Page</title>
         <link rel="stylesheet" href="styles/home.css">
         <link rel="stylesheet" href="styles/navbar.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/home.js"></script>
         <script type="text/javascript" src="scripts/navbar.js"></script>
     </head>

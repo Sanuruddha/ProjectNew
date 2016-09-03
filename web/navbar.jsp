@@ -6,15 +6,17 @@
         <%}%>
     <li class="dropdown">
         <a href="#" class="dropbtn">Diseases</a>
-        <div class="dropdown-content">
-            <a id="cancer" href="#" onmouseout="hideSubMenu(this)" onmouseover="spawnSubMenu(this.offsetTop)">Cancer</a>
-            <a id="diabetes" href="#" onmouseout="hideSubMenu(this)" onmouseover="spawnSubMenu(this.offsetTop)">Diabetes</a>
-            <a id="hiv" href="#" onmouseout="hideSubMenu(this)" onmouseover="spawnSubMenu(this.offsetTop)">HIV</a>
+        <div class="dropdown-content" onmouseout="hideSubMenu()">
+            <a class="disease-links" id="cancer" href="#" onmouseover="spawnSubMenu(this.offsetTop)">Cancer</a>
+            <a class="disease-links" id="diabetes" href="#" onmouseover="spawnSubMenu(this.offsetTop)">Diabetes</a>
+            <a class="disease-links" id="hiv" href="#" onmouseover="spawnSubMenu(this.offsetTop)">HIV</a>
         </div>
-        <div id="submenu-spawn">
+        <div id="submenu-spawn" onmouseout="hideSubMenu()" onmouseover="spawnSubMenu()">
             <a href="#">Description</a>
             <a href="#">Symptoms</a>
             <a href="#">Causes</a>
+            <a href="#">Precautions</a>
+            <a href="#">Specialized doctors</a>
         </div>
     </li>
     <li><a href="forum.jsp">Forum</a></li>
