@@ -18,7 +18,7 @@
                             </li>
                             <li><a href="#"><span>Precautions</span></a>
                             </li>
-                            <li><a href="#"><span>Specialized Doctors</span></a>
+                            <li class="doctors"><span>Specialized Doctors</span>
                             </li>
 
                         </ul>
@@ -34,7 +34,7 @@
                             </li>
                             <li><a href="#"><span>Precautions</span></a>
                             </li>
-                            <li><a href="#"><span>Specialized Doctors</span></a>
+                            <li class="doctors"><span>Specialized Doctors</span>
                             </li>
 
                         </ul>
@@ -50,7 +50,7 @@
                             </li>
                             <li><a href="#"><span>Precautions</span></a>
                             </li>
-                            <li><a href="#"><span>Specialized Doctors</span></a>
+                            <li class="doctors"><span>Specialized Doctors</span>
                             </li>
 
                         </ul>
@@ -67,8 +67,6 @@
             </li>
 
             <li><a href="#"><span>Blog</span></a>
-            </li>
-            <li><a href="https://www.facebook.com/"><img alt="Page facebook" src="/img/icon-facebook.gif" style="max-width:19.0px;max-height:19.0px;" /></a>
             </li>
             <li style="padding:0 0;float:right;display:block">
                 <a style="padding:15px 40px; " href="logout.jsp"><span>Logout</span></a>

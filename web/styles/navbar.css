@@ -46,7 +46,10 @@ li{
     top: 50px;
     left: 0;
     width: 150px;
+}
 
+.submenu.smaller .submenu li{
+    width:180px;
 }
 
 .submenu.larger ul{
@@ -107,8 +110,8 @@ li{
     background-color: #333;
 }
 
-.submenu.smaller .submenu:after,#doctors{
-    content:'>  ';
+.submenu.smaller .submenu:after,.doctors:after{
+    content:'>';
     float:right;
     color:white;
     white-space: nowrap;
