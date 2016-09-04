@@ -8,6 +8,10 @@
         <servlet-name>doctors</servlet-name>
         <servlet-class>other.doctors</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>donationProcess</servlet-name>
+        <servlet-class>other.donationProcess</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>chatprocess</servlet-name>
         <url-pattern>/chatprocess</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>doctors</servlet-name>
         <url-pattern>/doctors</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>donationProcess</servlet-name>
+        <url-pattern>/donationProcess</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

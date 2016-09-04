@@ -1,119 +1,120 @@
 ul, li{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-        }
-        li{
-            cursor: pointer; 
-        }
+}
+li{
+    cursor: pointer; 
+}
 
-        .nav-main-menu li{
-            display: inline-block;
-            background-color: #333;
-            position: relative;
-            margin-left: -4px;
-            padding: 15px 40px;
-            float:left;
-        }
+.nav-main-menu li{
+    display: inline-block;
+    background-color: #333;
+    position: relative;
+    margin-left: -4px;
+    padding:0 0;
+    float:left;
+}
 
-        .nav-main-menu li:hover{
-            background-color: #292929;
-        }
+.nav-main-menu>li>a{
+    padding: 15px 40px;
+}
+.nav-main-menu li:hover{
+    background-color: #292929;
+}
 
-        .nav-main-menu li a{
-            text-decoration: none;
-            color:white;
-            display:block;
-        }
+.nav-main-menu li a{
+    text-decoration: none;
+    color:white;
+    display:block;
+}
 
-        .submenu ul{
-            display: none;
-            position: absolute;
-            top: 50px;
-            left: 0;
-            width: 200px;
-        }
+.submenu ul{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200px;
+}
 
-        .submenu.smaller ul{
-            background-color: #292929;
-            cursor: pointer;
-            display: none;
-            position: absolute;
-            top: 50px;
-            left: 0;
-            width: 150px;
+.submenu.smaller ul{
+    background-color: #292929;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 150px;
 
-        }
+}
 
+.submenu.larger ul{
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 250px;
+    z-index: 1;
+}
 
+.submenu ul li{
+    width: 100%;
+    margin: 0;
+    padding: 8px 15px;
+    display: block;
+    height: auto;
+    min-height: 25px;
+    border-top: solid 1px black;
+    background-color: #414141;
+    z-index: 1;
+}
+.submenu ul+li{
+    border-top:none;
+}
 
-        .submenu.larger ul{
-            display: none;
-            position: absolute;
-            top: 25px;
-            left: 0;
-            width: 250px;
-            z-index: 1;
-        }
+.submenu ul li a,
+.submenu ul li span{
+    color: #fff;
+}
+.submenu:hover ul .submenu ul{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
 
-        .submenu ul li{
-            width: 100%;
-            margin: 0;
-            padding: 8px 15px;
-            display: block;
-            height: auto;
-            min-height: 25px;
-            border-top: solid 1px black;
-            background-color: #414141;
-            z-index: 1;
-        }
-        .submenu ul+li{
-            border-top:none;
-        }
+.submenu.smaller:hover ul .submenu ul{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
 
-        .submenu ul li a,
-        .submenu ul li span{
-            color: #fff;
-        }
-        .submenu:hover ul .submenu ul{
-            display: none;
-            position: absolute;
-            top: 0px;
-            left: 200px;
-        }
+.submenu:hover ul{
+    display: block;
+}
 
-        .submenu.smaller:hover ul .submenu ul{
-            display: none;
-            position: absolute;
-            top: 0px;
-            left: 150px;
-        }
+.submenu ul .submenu:hover ul{
+    display: block;
+}
 
-        .submenu:hover ul{
-            display: block;
-        }
+.submenu.smaller ul .submenu:hover ul{
+    display: block;
+}
 
-        .submenu ul .submenu:hover ul{
-            display: block;
-        }
+.submenu ul li:hover{
+    background-color: #333;
+}
 
-        .submenu.smaller ul .submenu:hover ul{
-            display: block;
-        }
+.submenu.smaller .submenu:after,#doctors{
+    content:'>  ';
+    float:right;
+    color:white;
+    white-space: nowrap;
+}
 
-        .submenu ul li:hover{
-            background-color: #333;
-        }
-
-        .submenu.smaller .submenu:after,#doctors{
-            content:'>  ';
-            float:right;
-            color:white;
-            white-space: nowrap;
-        }
-
-        .submenu.smaller .submenu a{
-            width:150px;
-            float:left;
-        }
+.submenu.smaller .submenu a{
+    width:150px;
+    float:left;
+}
