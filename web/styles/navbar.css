@@ -1,81 +1,119 @@
-#home-navbar {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
+ul, li{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
 
-#home-navbar li:hover{
-    background-color: #292929;
-}
+        }
+        li{
+            cursor: pointer; 
+        }
 
-#home-navbar>li {
-    width:160px;
-    float: left;
-    margin: 0px 0px;
-    
-}
+        .nav-main-menu li{
+            display: inline-block;
+            background-color: #333;
+            position: relative;
+            margin-left: -4px;
+            padding: 15px 40px;
+            float:left;
+        }
 
-#home-navbar #logout{
-    float:right;
-}
+        .nav-main-menu li:hover{
+            background-color: #292929;
+        }
 
-#home-navbar>li>a,#home-navbar>.dropbtn {
-    width:80%;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+        .nav-main-menu li a{
+            text-decoration: none;
+            color:white;
+            display:block;
+        }
+
+        .submenu ul{
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 200px;
+        }
+
+        .submenu.smaller ul{
+            background-color: #292929;
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 150px;
+
+        }
 
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+        .submenu.larger ul{
+            display: none;
+            position: absolute;
+            top: 25px;
+            left: 0;
+            width: 250px;
+            z-index: 1;
+        }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+        .submenu ul li{
+            width: 100%;
+            margin: 0;
+            padding: 8px 15px;
+            display: block;
+            height: auto;
+            min-height: 25px;
+            border-top: solid 1px black;
+            background-color: #414141;
+            z-index: 1;
+        }
+        .submenu ul+li{
+            border-top:none;
+        }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+        .submenu ul li a,
+        .submenu ul li span{
+            color: #fff;
+        }
+        .submenu:hover ul .submenu ul{
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+        }
 
-#submenu-spawn{
-    display:none;
-    position: absolute;
-    left: 328px;
-    width:130px;
-    height:120px;
-}
+        .submenu.smaller:hover ul .submenu ul{
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 150px;
+        }
 
-#submenu-spawn a{
-    padding: 10px 10px;
-    display:block;
-    text-decoration: none;
-    background-color: #f9f9f9;
-    color:black;
-    min-width: 130px;
-}
+        .submenu:hover ul{
+            display: block;
+        }
 
-.disease-links:after{
-    content:'\003E';
-    float:right;
-}
+        .submenu ul .submenu:hover ul{
+            display: block;
+        }
 
-#submenu-spawn a:hover{
-    background-color: #f1f1f1;
-}
+        .submenu.smaller ul .submenu:hover ul{
+            display: block;
+        }
+
+        .submenu ul li:hover{
+            background-color: #333;
+        }
+
+        .submenu.smaller .submenu:after,#doctors{
+            content:'>  ';
+            float:right;
+            color:white;
+            white-space: nowrap;
+        }
+
+        .submenu.smaller .submenu a{
+            width:150px;
+            float:left;
+        }
