@@ -7,7 +7,7 @@
     boolean status= LoginDao.validate(obj);
     if (status){
         session.setAttribute("session", "TRUE");
-        session.setAttribute("email", request.getParameter("email"));
+        session.setAttribute("user",obj);
         
 %>
 <jsp:forward page="home.jsp"></jsp:forward>

@@ -12,33 +12,34 @@
     width:100%;    
 }
 
-#buttonlink{
-        border-radius: 5px;
-	display:block;
-	border-style:solid;
-	border-color:#bbb #888 #666 #aaa;
-	border-width:2px 3px 3px 2px;
-	width:246px;
-	height: 30px;
-	background: royalblue;
-	color: #f9f9f9;
-	line-height:2;
-	text-align:center;
-	text-decoration:none;
-	font-weight:400;
-        position:absolute;
-        bottom:0;
-        right:0;
+#chat-button{
+    margin-bottom: 1px;
+    border-radius: 5px;
+    display:block;
+    border-style:solid;
+    border-color:#bbb #888 #666 #aaa;
+    border-width:1px 2px 2px 1px;
+    width:246px;
+    height: 30px;
+    background: #ba7f15;
+    color: #f9f9f9;
+    line-height:2;
+    text-align:center;
+    text-decoration:none;
+    font-weight:400;
+    position:absolute;
+    bottom:0;
+    right:0;
 }
 
-#buttonlink:active{
-	border-color: #666 #aaa #bbb #888;
-	border-width:3px 2px 2px 3px;
-	color:#000;
+#chat-button:active{
+    border-color: #666 #aaa #bbb #888;
+    border-width:2px 1px 1px 2px;
+    color:#000;
 }
 
-#buttonlink:hover{
+#chat-button:hover{
     cursor: pointer;
     color:  #f9f9f9;
-    background: #3333ff;
+    background: #9f701c;
 }

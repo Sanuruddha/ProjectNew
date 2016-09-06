@@ -1,6 +1,6 @@
 <div class="main-nav">
     <div class="nav-centered" style="width:100%">
-        <ul class="nav-main-menu" style="width:100%;z-index: 1;background-color:#333;height:50px;margin:0 0;padding:0 0;">
+        <ul class="nav-main-menu" style="width:100%;z-index: 1;background-color: #c65732;height:50px;margin:0 0;padding:0 0;">
             <%if (session.getAttribute("session") == null) {%>
             <li><a class="active" href="index.jsp"><span>Home</span></a></li>
                 <%} else {%>

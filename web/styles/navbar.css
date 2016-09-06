@@ -10,7 +10,7 @@ li{
 
 .nav-main-menu li{
     display: inline-block;
-    background-color: #333;
+    background-color: #c65732;
     position: relative;
     margin-left: -4px;
     padding:0 0;
@@ -21,7 +21,7 @@ li{
     padding: 15px 40px;
 }
 .nav-main-menu li:hover{
-    background-color: #292929;
+    background-color: #b24e2d;
 }
 
 .nav-main-menu li a{
@@ -69,7 +69,7 @@ li{
     height: auto;
     min-height: 25px;
     border-top: solid 1px black;
-    background-color: #414141;
+    background-color:#c65732;
     z-index: 1;
 }
 .submenu ul+li{
@@ -107,7 +107,7 @@ li{
 }
 
 .submenu ul li:hover{
-    background-color: #333;
+    background-color: #b24e2d;
 }
 
 .submenu.smaller .submenu:after,.doctors:after{

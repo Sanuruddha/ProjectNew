@@ -2,11 +2,35 @@ package bean;
 
 public class LoginBean {
 
-    private String email, password;
-
-    public LoginBean() {
+    private String user_name,email, password;
+    int user_id,user_type;
+    
+    public LoginBean(){}
+    
+    public String getUserName(){
+        return user_name;
+    }  
+    
+    public void setUserName(String user_name){
+        this.user_name=user_name;
+    }
+    
+    public int getUserId() {
+        return user_id;
     }
 
+    public void setUserId(int user_id) {
+        this.user_id = user_id;
+    }
+    
+    public int getUserType() {
+        return user_type;
+    }
+
+    public void setUserType(int user_type) {
+        this.user_type = user_type;
+    }
+    
     public String getEmail() {
         return email;
     }

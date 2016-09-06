@@ -30,7 +30,7 @@
         </div>
         <div>
             <div id="chat-box">
-                <a id="buttonlink" onclick="openchat()">Chat</a>
+                <a id="chat-button" onclick="openchat()">Chat</a>
                 <%@include file="html-modules/chatarea.html"%>
             </div>
         </div>
