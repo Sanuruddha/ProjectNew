@@ -1,12 +1,15 @@
 
 <%@page import="bean.RegisterDao"%>
 
-<jsp:useBean id="obj" class="bean.RegisterBean"/>  
+<jsp:useBean id="obj2" class="bean.User"/>  
 
-<jsp:setProperty property="*" name="obj"/> 
+<jsp:setProperty property="*" name="obj2"/> 
 <%
-    boolean status = RegisterDao.register(obj);
-    if(status){
+    System.out.println(request.getParameter("user_type"));
+    boolean status = RegisterDao.register(obj2);
+    if (status) {
         out.println("Successfull");
+    } else {
+        out.println("Not Successfull");
     }
 %>

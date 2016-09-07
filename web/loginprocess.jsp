@@ -1,5 +1,5 @@
 <%@page import="bean.LoginDao"%>  
-<jsp:useBean id="obj" class="bean.LoginBean"/>  
+<jsp:useBean id="obj" class="bean.User"/>  
 
 <jsp:setProperty property="*" name="obj"/> 
 

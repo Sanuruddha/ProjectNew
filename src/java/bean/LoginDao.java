@@ -4,12 +4,12 @@ import java.sql.*;
 
 public class LoginDao {
 
-    public static boolean validate(LoginBean bean) {
+    public static boolean validate(User bean) {
         boolean status = false;
         try {
             Connection con = ConnectionProvider.getCon();
        
-            PreparedStatement ps=con.prepareStatement("SELECT * FROM users WHERE Email=? AND Password=?");  	
+            PreparedStatement ps=con.prepareStatement("SELECT * FROM user WHERE email=? AND password=?");  	
             
             
             ps.setString(1, bean.getEmail());

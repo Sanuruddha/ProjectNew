@@ -1,11 +1,11 @@
 package bean;
 
-public class LoginBean {
+public class User {
 
-    private String user_name,email, password;
-    int user_id,user_type;
+    private String user_name,email, password,user_type;
+    int user_id;
     
-    public LoginBean(){}
+    public User(){}
     
     public String getUserName(){
         return user_name;
@@ -23,11 +23,11 @@ public class LoginBean {
         this.user_id = user_id;
     }
     
-    public int getUserType() {
+    public String getUserType() {
         return user_type;
     }
 
-    public void setUserType(int user_type) {
+    public void setUserType(String user_type) {
         this.user_type = user_type;
     }
     

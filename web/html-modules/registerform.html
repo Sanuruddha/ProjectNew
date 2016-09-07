@@ -12,7 +12,7 @@
                 </tr>
                 <tr>
                     <td><div ID="register-label2">Preferred-Name:</div></td>
-                    <td><input ID="name-field" type="text" name="name"/></td>
+                    <td><input ID="name-field" type="text" name="user_name"/></td>
                     <td><div class="before-validation" ID="name-val-icon"></div></td>
                 </tr> 
                 <tr>
@@ -22,15 +22,15 @@
                 </tr>
                 <tr>
                     <td><div ID="register-label4">Retype-password:</div></td>
-                    <td><input ID="repassword-field" type="password" name="name"/></td>
+                    <td><input ID="repassword-field" type="password" name="retype-password"/></td>
                     <td><div class="before-validation" ID="repassword-val-icon"></div></td>
                 </tr>
                 <tr>
                     <td><div ID="register-label5">Select-category:</div></td>
-                    <td><select onchange="processSelect(this.value)">
-                            <option value="regular">Regular</option>
-                            <option value="researcher">Researcher</option>
-                            <option value="medical-center">Medical-Center</option>
+                    <td><select name="user_type" onchange="processSelect(this.value)">
+                            <option value='2'>Regular</option>
+                            <option value='3'>Researcher</option>
+                            <option value='4'>Medical-Center</option>
                         </select></td>
                 </tr>
                 <tr><td><div id="additional-label"></div></td>
