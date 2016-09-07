@@ -26,7 +26,7 @@ public class RegisterDao {
             ps.setString(1,bean.getUserName());
             ps.setString(2,bean.getEmail());
             ps.setString(3,bean.getPassword());
-            ps.setString(4,bean.getUserType());
+            ps.setInt(4,bean.getUserType());
             
             int rows=ps.executeUpdate();
             System.out.println("Came here too");

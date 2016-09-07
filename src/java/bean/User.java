@@ -2,8 +2,8 @@ package bean;
 
 public class User {
 
-    private String user_name,email, password,user_type;
-    int user_id;
+    private String user_name,email, password;
+    int user_id,user_type;
     
     public User(){}
     
@@ -23,11 +23,11 @@ public class User {
         this.user_id = user_id;
     }
     
-    public String getUserType() {
+    public int getUserType() {
         return user_type;
     }
 
-    public void setUserType(String user_type) {
+    public void setUserType(int user_type) {
         this.user_type = user_type;
     }
     
