@@ -12,6 +12,7 @@
 }
 
 .before-validation:before{
+    display:none;
     content: "\2713";
     color: #333;
     font-size:17px;

@@ -12,10 +12,11 @@ function validateMyForm() {
 
     var pw = document.getElementById("password-field").value;
     var rpw = document.getElementById("repassword-field").value;
-    if (pw !== rpw) {
+    if (pw !== rpw || !validateName()) {
         document.getElementById("repassword-val-icon").className = "invalid";
         return false;
     }
+
 }
 
 function validatePassword() {
@@ -45,11 +46,11 @@ function processSelect(value) {
     var inputParent = document.getElementById("additional-input");
     var labelParent = document.getElementById("additional-label");
     if (inputParent.childElementCount > 0) {
-        if(value==="regular"){
+        if (value === "regular") {
             inputParent.removeChild(inputParent.childNodes[0]);
             labelParent.removeChild(labelParent.childNodes[0]);
         }
-        if (value ==="medical-center") {
+        if (value === "medical-center") {
             input.name = "reg-number";
             label.innerHTML = "Registration No.:";
             inputParent.replaceChild(input, inputParent.childNodes[0]);
@@ -60,8 +61,7 @@ function processSelect(value) {
             inputParent.replaceChild(input, inputParent.childNodes[0]);
             labelParent.replaceChild(label, labelParent.childNodes[0]);
         }
-    }
-    else{
+    } else {
         if (value === "medical-center") {
             input.name = "reg-number";
             label.innerHTML = "Registration No.:";
@@ -74,4 +74,16 @@ function processSelect(value) {
             labelParent.appendChild(label);
         }
     }
+}
+
+function validateName() {
+    var element = document.getElementById("name-field");
+    if (element.value.length<2) {
+        document.getElementById("name-val-icon").className = "invalid";
+        return false;
+    } else {
+        document.getElementById("name-val-icon").className = "valid";
+        return true;
+    }
+
 }

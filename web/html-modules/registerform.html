@@ -7,12 +7,12 @@
             <table>
                 <tr>
                     <td><div ID="register-label1">Email:</div></td>
-                    <td><input ID="email-field" type="text" name="email" onkeypress="validateEmail()"/></td>
+                    <td><input ID="email-field" type="text" name="email" onkeyup="validateEmail()" onclick="validateEmail()"/></td>
                     <td><div class="before-validation" ID="email-val-icon"></div></td>
                 </tr>
                 <tr>
                     <td><div ID="register-label2">Preferred-Name:</div></td>
-                    <td><input ID="name-field" type="text" name="user_name"/></td>
+                    <td><input ID="name-field" type="text" name="user_name" onclick="validateName()" onkeypress="validateName()" onchange="validateName()"/></td>
                     <td><div class="before-validation" ID="name-val-icon"></div></td>
                 </tr> 
                 <tr>

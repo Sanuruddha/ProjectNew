@@ -1,14 +1,12 @@
-ul, li{
+.nav-main-menu ul,.nav-main-menu  li{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-li{
-    cursor: pointer; 
-}
 
 .nav-main-menu li{
+    cursor: pointer; 
     display: inline-block;
     background-color: #c65732;
     position: relative;
@@ -20,6 +18,7 @@ li{
 .nav-main-menu>li>a{
     padding: 15px 40px;
 }
+
 .nav-main-menu li:hover{
     background-color: #b24e2d;
 }
@@ -35,7 +34,6 @@ li{
     position: absolute;
     top: 50px;
     left: 0;
-    width: 200px;
 }
 
 .submenu.smaller ul{
@@ -76,8 +74,7 @@ li{
     border-top:none;
 }
 
-.submenu ul li a,
-.submenu ul li span{
+.submenu ul li a,.submenu ul li span{
     color: #fff;
 }
 .submenu:hover ul .submenu ul{
@@ -96,6 +93,7 @@ li{
 
 .submenu:hover ul{
     display: block;
+    width: 150px;
 }
 
 .submenu ul .submenu:hover ul{
