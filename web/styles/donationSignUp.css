@@ -1,9 +1,10 @@
 #donation-form-container{
-    position: fixed;
-    left:450px;
+    position: absolute;
+    right:450px;
     top:220px;
     z-index: 0;
 }
 #navbar-container{
+    position: relative;
     z-index: 4;
 }
