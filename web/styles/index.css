@@ -2,10 +2,15 @@
   
 }
 
+body{
+     margin:0px 0px;
+     background-image:url('../Pictures/background.jpg');
+}
+
 #logo-area{
     float:top;
     width:100%;
-    padding-bottom: 43px;
+    padding: 20px 0px;
     
 }
 

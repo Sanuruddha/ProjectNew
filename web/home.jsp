@@ -11,7 +11,7 @@
         <script type="text/javascript" src="scripts/home.js"></script>
         <script type="text/javascript" src="scripts/navbar.js"></script>
     </head>
-    <body style="background-image:url('Pictures/background.jpg')">
+    <body>
         <%@include file="checkLogin.jsp"%>
         <%-- Logon area div tag --%>
         <%------------------------%>

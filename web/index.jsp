@@ -10,14 +10,14 @@
         <script type="text/javascript" src="scripts/index.js"></script>
         <link rel="stylesheet" href="styles/registerform.css">
     </head>
-    <body style="background-image:url('Pictures/background.jpg')">
+    <body>
         <%@include file="html-modules/registerform.html"%>
 
         <div ID="top">
             <div id="top-area">
 
                 <div id="logo-area">
-                    <img style="margin:0px 400px;height:15%;width:27%" src="Pictures/Logo.jpg" alt="Logo"> 
+                    <img style="margin-left:400px;height:15%;width:27%" src="Pictures/Logo.jpg" alt="Logo"> 
                 </div>
                 <%@include file="navbar.jsp" %>
 
