@@ -23,6 +23,7 @@ body{
     display: block;
     border-style: solid;
     border-width: 2px;
+    border-bottom: none;
     border-color: #a17e19;
     width: 246px;
     height: 20px;
@@ -32,7 +33,7 @@ body{
     text-align: center;
     text-decoration: none;
     font-weight: 400;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
 }

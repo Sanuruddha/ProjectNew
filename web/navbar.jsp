@@ -71,10 +71,13 @@
         </li>
         <li><a href="#">Forum</a></li>
         <li><a href="#">Diseases</a><span class="dropBottom"></span>
-            <ul></ul>
+            <ul>
+                <li><a href="donationSignUp.jsp">Sign up to donate</a></li>
+                <li><a href="acquisitionSignUp.jsp">Sign up to aquire</a></li>
+            </ul>
         </li>
         <%if (session.getAttribute("session") != null) {%>
         <li style="float:right"><a href="logout.jsp">Logout</a></li>
-        <%}%>
+            <%}%>
     </ul>
 </nav>

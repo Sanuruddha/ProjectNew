@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/home.css">
         <link rel="stylesheet" href="styles/navbar.css">
         <link rel="stylesheet" href="styles/donationSignUp.css">
+        <link rel="stylesheet" href="styles/donationForm.css">
         <script type="text/javascript" src="scripts/home.js"></script>
     </head>
     <body style="background-image:url('Pictures/background.jpg')">
