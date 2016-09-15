@@ -1,17 +1,18 @@
 #googleMap{
-  
+
 }
 
 body{
-     margin:0px 0px;
-     background-image:url('../Pictures/background.jpg');
+    min-width: 960px;
+    margin:0px 0px;
+    background-image:url('../Pictures/background.jpg');
 }
 
 #logo-area{
     float:top;
     width:100%;
     padding: 20px 0px;
-    
+
 }
 
 #top{

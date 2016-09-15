@@ -1,6 +1,11 @@
 body{
-     margin:0px 0px;
-     background-image:url('../Pictures/background.jpg');
+    min-width: 960px;
+    margin:0px 0px;
+    background-image:url('../Pictures/background.jpg');
+}
+
+footer{
+    z-index: 0;
 }
 #chat-box{
     display: block;
@@ -8,13 +13,13 @@ body{
     bottom:0;
     right:2px;
     width:250px;
-    height:300px;
+    height:0px;
 }
 
 #logo-area img{
-     margin-left:500px;
-     height:15%;
-     width:27%;
+    margin-left:500px;
+    height:15%;
+    width:27%;
 }
 
 #logo-area{
@@ -45,8 +50,12 @@ body{
 }
 
 #chat-button:active{
-    
+
     color:#000;
+}
+
+#chat-button:active #chat-box{
+    height:300px;
 }
 
 #chat-button:hover{
