@@ -17,28 +17,28 @@
         <%------------------------%>
         <%------------------------%>
         <header>
-        <div id="logo-area">
-         <img style="margin:0px 500px;height:15%;width:27%;" src="Pictures/Logo.jpg" alt="Smiley face"> 
-        </div>
+            <div id="logo-area">
+                <img src="Pictures/Logo.jpg" alt="Smiley face"> 
+            </div>
         </header>
         <%--==============================================================================================--%>
-        
+
         <nav>
-        <%-- navigation bar --%>
-        <%@include file="navbar.jsp"%>
-        <%--========================--%>
+            <%-- navigation bar --%>
+            <%@include file="navbar.jsp"%>
+            <%--========================--%>
         </nav>
         <%--chat box goes here--%>
-        
+
         <footer>
-        <div>
-            <div id="chat-box">
-                <a id="chat-button" onclick="openchat()">Chat</a>
-                <%@include file="html-modules/chatarea.html"%>
+            <div>
+                <div id="chat-box">
+                    <a id="chat-button" onclick="openchat()">Chat</a>
+                    <%@include file="html-modules/chatarea.html"%>
+                </div>
             </div>
-        </div>
         </footer>
         <%--==================================================--%>
-        
+
     </body>
 </html>

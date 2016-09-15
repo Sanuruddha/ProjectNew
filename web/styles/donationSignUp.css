@@ -4,3 +4,6 @@
     top:220px;
     z-index: 0;
 }
+#navbar-container{
+    z-index: 4;
+}

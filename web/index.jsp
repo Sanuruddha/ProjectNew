@@ -22,7 +22,7 @@
                 <%@include file="navbar.jsp" %>
 
             </div>
-            <%@include file="html-modules/loginform.html" %>
+            <%@include file="html-modules/loginform.html"%>
             <%
                 if (session.getAttribute("redirect") != null) {
                     if (session.getAttribute("redirect").equals("TRUE")) {

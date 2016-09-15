@@ -20,9 +20,10 @@
          <img style="margin:0px 500px;height:15%;width:27%;" src="Pictures/Logo.jpg" alt="Smiley face"> 
         </div>
         <%--==============================================================================================--%>
-
+        <div id="navbar-container">
         <%-- navigation bar --%>
         <%@include file="navbar.jsp"%>
+        </div>
         <%--========================--%>
        
         <%--chat box goes here--%>
