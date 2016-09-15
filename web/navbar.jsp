@@ -1,78 +1,80 @@
-<ul class="nav-main-menu" style="width:100%;z-index: 1;background-color: #c65732;height:50px;margin:0 0;padding:0 0;">
-    <%if (session.getAttribute("session") == null) {%>
-    <li><a class="active" href="index.jsp"><span>Home</span></a></li>
-        <%} else {%>
-    <li><a class="active" href="home.jsp"><span>Home</span></a></li>
+<nav>
+    <ul>
+        <%if (session.getAttribute("session") == null) {%>
+        <li><a href="index.jsp"><span>Home</span></a></li>
+            <%} else {%>
+        <li><a href="home.jsp"><span>Home</span></a></li>
+            <%}%>
+        <li><a href="#">Diseases</a><span class="dropBottom"></span>
+            <ul>
+                <li><a href="#">Cancer</a><span class="dropRight"></span>
+                    <ul>
+                        <li><a href="#">Description</a></li>
+                        <li><a href="#">Symptoms</a></li>
+                        <li><a href="#">Causes</a></li>
+                        <li><a href="#">Precautions</a></li>
+                        <li><a href="#">Specialized doctors</a><span class="dropRight"></span>
+                            <ul>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Diabetes</a><span class="dropRight"></span>
+                    <ul>
+                        <li><a href="#">Description</a></li>
+                        <li><a href="#">Symptoms</a></li>
+                        <li><a href="#">Causes</a></li>
+                        <li><a href="#">Precautions</a></li>
+                        <li><a href="#">Specialized doctors</a><span class="dropRight"></span>
+                            <ul>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">HIV</a><span class="dropRight"></span>
+                    <ul>
+                        <li><a href="#">Description</a></li>
+                        <li><a href="#">Symptoms</a></li>
+                        <li><a href="#">Causes</a></li>
+                        <li><a href="#">Precautions</a></li>
+                        <li><a href="#">Specialized doctors</a><span class="dropRight"></span>
+                            <ul>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Gastritis</a><span class="dropRight"></span>
+                    <ul>
+                        <li><a href="#">Description</a></li>
+                        <li><a href="#">Symptoms</a></li>
+                        <li><a href="#">Causes</a></li>
+                        <li><a href="#">Precautions</a></li>
+                        <li><a href="#">Specialized doctors</a><span class="dropRight"></span>
+                            <ul>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Diseases</a><span class="dropBottom"></span>
+            <ul></ul>
+        </li>
+        <%if (session.getAttribute("session") != null) {%>
+        <li style="float:right"><a href="logout.jsp">Logout</a></li>
         <%}%>
-    <li class="submenu smaller"><a href="#"><span>Diseases</span></a>
-        <div>
-        <ul>
-            <li class="submenu"><span>Cancer</span>
-                <ul>
-                    <li><a href="#"><span>Description</span></a>
-                    </li>
-                    <li><a href="#"><span>Symptoms</span></a>
-                    </li>
-                    <li><a href="#"><span>Causes</span></a>
-                    </li>
-                    <li><a href="#"><span>Precautions</span></a>
-                    </li>
-                    <li class="doctors"><span>Specialized Doctors</span>
-                    </li>
-
-                </ul>
-            </li>
-            <li class="submenu"><span>Diabetes</span>
-
-                <ul>
-                    <li><a href="#"><span>Description</span></a>
-                    </li>
-                    <li><a href="#"><span>Symptoms</span></a>
-                    </li>
-                    <li><a href="#"><span>Causes</span></a>
-                    </li>
-                    <li><a href="#"><span>Precautions</span></a>
-                    </li>
-                    <li class="doctors"><span>Specialized Doctors</span>
-                    </li>
-
-                </ul>
-            </li>
-            <li class="submenu"><span>HIV</span>
-
-                <ul>
-                    <li><a href="#"><span>Description</span></a>
-                    </li>
-                    <li><a href="#"><span>Symptoms</span></a>
-                    </li>
-                    <li><a href="#"><span>Causes</span></a>
-                    </li>
-                    <li><a href="#"><span>Precautions</span></a>
-                    </li>
-                    <li class="doctors"><span>Specialized Doctors</span>
-                    </li>
-
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li><a href="#forum"><span>Forum</span></a>
-    </li>
-    <li class="submenu smaller"><a href="#"><span>Donations</span></a>
-        <ul>
-            <li class="submenu" style='width:200px'><a href="donationSignUp.jsp"><span>Sign up for donations</span></a></li>
-            <li class="submenu" style='width:200px'><a href="acquisitionSignUp.jsp"><span>Sign up for acquire</span></a></li>
-        </ul>
-    </li>
-
-    <li><a href="#"><span>Blog</span></a>
-    </li>
-    <%if (session.getAttribute("session") != null) {%>
-    <li style="padding:0 0;float:right;display:block">
-        <a style="padding:15px 40px; " href="logout.jsp"><span>Logout</span></a>
-    </li>
-    <%}%>
-    <li>
-        <a href="wiki.jsp"><span>Wiki</span></a>
-    </li>
-</ul>
+    </ul>
+</nav>
