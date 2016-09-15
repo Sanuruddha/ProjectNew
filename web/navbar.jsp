@@ -70,7 +70,7 @@
             </ul>
         </li>
         <li><a href="#">Forum</a></li>
-        <li><a href="#">Diseases</a><span class="dropBottom"></span>
+        <li><a href="#">Donations</a><span class="dropBottom"></span>
             <ul>
                 <li><a href="donationSignUp.jsp">Sign up to donate</a></li>
                 <li><a href="acquisitionSignUp.jsp">Sign up to aquire</a></li>
