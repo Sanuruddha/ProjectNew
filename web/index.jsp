@@ -17,19 +17,13 @@
             <div id="top-area">
 
                 <div id="logo-area">
-                    <img style="margin-left:400px;height:15%;width:27%" src="Pictures/Logo.jpg" alt="Logo"> 
+                    <img style="margin-left:400px;height:15%;width:27%" src="Pictures/Logo.png" alt="Logo"> 
                 </div>
                 <%@include file="navbar.jsp" %>
 
             </div>
             <%@include file="html-modules/loginform.html"%>
             <%
-                if (session.getAttribute("redirect") != null) {
-                    if (session.getAttribute("redirect").equals("TRUE")) {
-                        out.println("<script>document.getElementById('para').innerHTML = 'You must login first!!';</script>");
-                        session.setAttribute("redirect", "FALSE");
-                    }
-                }
                 if (session.getAttribute("invalidlogin") != null) {
                     if (session.getAttribute("invalidlogin").equals("TRUE")) {
                         out.println("<script>document.getElementById('para').innerHTML = 'Wrong credentials!';</script>");
@@ -38,6 +32,11 @@
                 }
             %>
         </div>
+        <section id="mid-container">
+            <div id="left-section"></div><!--
+            --><div id="middle-section"></div><!--
+            --><div id="right-section"></div><!--
+            --></section>
         <div id="googleMap" style="width:500px;height:380px;"></div>
     </body>
 </html>

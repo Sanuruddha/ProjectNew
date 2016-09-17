@@ -70,12 +70,15 @@
             </ul>
         </li>
         <li><a href="#">Forum</a></li>
+            <%if (session.getAttribute("session") != null) {%>
         <li><a href="#">Donations</a><span class="dropBottom"></span>
             <ul>
-                <li><a href="donationSignUp.jsp">Sign up to donate</a></li>
-                <li><a href="acquisitionSignUp.jsp">Sign up to aquire</a></li>
+                <li><a id="donate" href="#">Sign up to donate</a></li>
+                <li><a id="acquire" href="#">Sign up to aquire</a></li>
             </ul>
         </li>
+        <%}%>
+
         <%if (session.getAttribute("session") != null) {%>
         <li style="float:right"><a href="logout.jsp">Logout</a></li>
             <%}%>

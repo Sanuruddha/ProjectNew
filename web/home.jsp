@@ -7,6 +7,7 @@
         <title>JSP Page</title>
         <link rel="stylesheet" href="styles/home.css">
         <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/donationForm.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/home.js"></script>
         <script type="text/javascript" src="scripts/navbar.js"></script>
@@ -18,7 +19,7 @@
         <%------------------------%>
         <header>
             <div id="logo-area">
-                <img src="Pictures/Logo.jpg" alt="Smiley face"> 
+                <img src="Pictures/Logo.png" alt="Smiley face"> 
             </div>
         </header>
         <%--==============================================================================================--%>
@@ -27,6 +28,11 @@
         <%-- navigation bar --%>
         <%@include file="navbar.jsp"%>
         <%--========================--%>
+        <div id="mid-container">
+            <div id="left-section"></div><!--
+            --><div id="middle-section"></div><!--
+            --><div id="right-section"></div><!--
+            --></div>
 
         <%--chat box goes here--%>
 

@@ -1,17 +1,17 @@
 <form action="donationProcess" id="donation-form">
     <input type="hidden" name="pageName" value="donation">
     <div>Select what want to donate:</div>
-    <select><option>Blood</option>
-        <option>Wheelchair</option>
-        <option>Crutches</option>
-        <option>Medicine</option>
-        <option>Other</option>
+    <select name="item"><option>Blood</option>
+        <option value="0">Wheelchair</option>
+        <option value="1">Crutches</option>
+        <option value="2">Medicine</option>
+        <option value="3">Other</option>
     </select>
     <div>Your ID card number:</div>
-    <input type="text"/>
-    <div>Contact number(optional):</div>
-    <input type="text"/>
-    <div>Select Area</div>
+    <input name="contact-number" type="text"/>
+    <div>Contact number:</div>
+    <input name="area" type="text"/>
+    <div>Select Area:</div>
     <select>
         <option>Colombo</option>
         <option>Gampaha</option>

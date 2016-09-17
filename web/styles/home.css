@@ -4,6 +4,38 @@ body{
     background-image:url('../Pictures/background.jpg');
 }
 
+
+#mid-container{ 
+    width:100%;
+    height: 500px;
+    z-index: -1;
+}
+
+#left-section{
+    float:left;
+    width:25%;
+    height:100%;
+    background-color: black;
+}
+
+#middle-section{
+    z-index: -1;
+    position: absolute;
+    left:25%;
+    display:inline-block;
+    width:50%;
+    height:auto;
+    right:25%;
+}
+
+#right-section{
+    float:right;
+    display:inline-block;
+    width: 25%;
+    height:100%;
+    background-color: black;
+}
+
 footer{
     z-index: 0;
 }

@@ -1,46 +1,45 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="styles/chat.css">
-        <script type="text/javascript" src="scripts/chat.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $("#send-button").click(function () {
-                    var msg=$("#chat-input").val();
-                    $("#chat-input").val('');
-                    $.ajax({
-                        type: 'post',
-                        url: 'chatprocess',
-                        data: ({msg: msg}),
-                        success: function (data) {
-                            alert(data);
-                        },
-                        error: function () {
-                            alert('error');
-                        }
-                    });
+
+<head>
+    <link rel="stylesheet" href="styles/chat.css">
+    <script type="text/javascript" src="scripts/chat.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#send-button").click(function () {
+                var msg = $("#chat-input").val();
+                $("#chat-input").val('');
+                $.ajax({
+                    type: 'post',
+                    url: 'chatprocess',
+                    data: ({msg: msg}),
+                    success: function (data) {
+                        alert(data);
+                    },
+                    error: function () {
+                        alert('error');
+                    }
                 });
             });
-        </script>
-    </head>
+        });
+    </script>
+</head>
 
-    <div id="chat-area">
-        <div id="chat-header">
-            <div id="chat-title">
-                Chat with your friends!
-            </div>
-            <div id="close-button" onclick="closechat()">
-                &#10006    
-            </div>
+<div id="chat-area">
+    <div id="chat-header">
+        <div id="chat-title">
+            Chat with your friends!
         </div>
-
-        <div id="chat-body">
-            <div id="chat-content">
-                <textarea id="chat-input"></textarea>
-                <button id="send-button">Send</button>
-            </div>
-            <div id="chat-list">
-            </div>
+        <div id="close-button" onclick="closechat()">
+            &#10006    
         </div>
     </div>
-</html>
+
+    <div id="chat-body">
+        <div id="chat-content">
+            <textarea id="chat-input"></textarea>
+            <button id="send-button">Send</button>
+        </div>
+        <div id="chat-list">
+        </div>
+    </div>
+</div>
