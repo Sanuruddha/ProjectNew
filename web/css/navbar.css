@@ -1,0 +1,161 @@
+#loginform{
+    width:420px;
+}
+#loginform div{
+    color:#333333;
+}
+
+#loginform div{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#loginform:hover{
+    cursor: default;
+    background-color:#EDEDED;
+}
+
+#login-submit:hover{
+    cursor: pointer;
+}
+
+#loginform input{
+    width:100px;
+}
+
+#login-submit{
+    color: #333333;
+    height: 22px;
+    border-radius: 3px;
+    border:none;
+    width:55px;
+    background-color: #bbbbbb;
+}
+
+#login-submit:active{
+    background-color: #d8d8d8;
+}
+
+#loginform *{
+    margin:2px;
+}
+
+#loginform a:hover{
+    background-color: #EDEDED;
+}
+
+span.dropBottom,
+span.dropRight {
+    display: block;
+    box-shadow: inset 3px 0px 0px grey;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 5;
+}
+
+span.dropBottom {
+    box-shadow: inset 0px 3px 0px grey;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+nav {
+    height: 39px;
+    border-radius: 4px;
+    border-bottom-right-radius: 0;
+    background-color: #EDEDED;
+    opacity: 0.8;
+    width:100%;
+    display: table;
+    margin: 0px auto;
+    box-shadow: 0px 4px 0px   #888;
+    z-index: 5;
+}
+
+nav ul li {
+    background-color:#EDEDED;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    height:100%;
+}
+
+nav ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul ul {
+    opacity: 0;
+    position: absolute;
+    z-index: 5;
+    top: 160%;
+    visibility: hidden;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+
+}
+
+nav ul ul ul {
+    z-index: 5;
+    top: 0%;
+    left: 160%;
+}
+
+nav ul ul li:hover > ul {
+    top: 0%;
+    left: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+nav ul ul li { float: none;}
+
+
+
+nav ul a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 8px 15px;
+    width: 6em;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.2);
+}
+
+nav ul li:hover {
+    background-color: #d09c05; 
+}
+
+nav ul li a:hover { 
+    background-color: #d09c05;
+}
+
+#logout-link{
+    padding-left: 15px;
+    float:right;
+    padding:5px;
+    padding-bottom: 9px;
+}
+
+#profile-link{
+    float:right;
+    padding:7px;
+    padding-bottom: 9px;
+}
+
+#profile-link:hover,#logout-link:hover{
+    background-color: #bbbbbb;
+}

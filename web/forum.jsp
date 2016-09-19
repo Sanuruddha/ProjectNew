@@ -1,10 +1,10 @@
 <html>
     <head>
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="styles/loginform.css">
-        <script src="scripts/registerform.js"></script>
-        <link rel="stylesheet" href="styles/registerform.css">
+        <script src="js/registerform.js"></script>
+        <link rel="stylesheet" href="css/registerform.css">
     </head>
     <body style="background-image:url('Pictures/background.jpg')">
         <%

@@ -2,27 +2,32 @@
     display:none;
 }
 #mid-container{
+    top:0;
     display: inline-block;
     width:100%;
-    height: 500px;
+    height: auto;
+    z-index: -1;
+    position: relative;
 }
 
 #left-section{
-    display:inline-block;
+    float:left;
     width:25%;
     height:100%;
     background-color: black;
 }
 
 #middle-section{
-    top:0;
-    display:inline-block;
+    position:absolute;
+    z-index: -1;
+    left:25%;
     width:50%;
-    height:100%;
-    
+    height:auto;
+    right:25%;
 }
 
 #right-section{
+    float:right;
     display:inline-block;
     width: 25%;
     height:100%;
@@ -46,13 +51,17 @@ body{
     width:100%;
 }
 
-#loginform{
-    position: absolute;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 6px;
-    width:21%;
-    top:0;
-    right:0;
+#link-box{
+    position:absolute;
+    display:block;
+    width:337px;
+    background-color: #888;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
+#link-box a{
+    margin-left: 20px;
+    color: #000000;
+}

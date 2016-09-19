@@ -1,41 +1,77 @@
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link rel="stylesheet" href="styles/donationForm.css">
-        <link rel="stylesheet" href="styles/home.css">
-        <link rel="stylesheet" href="styles/navbar.css">
-        <link rel="stylesheet" href="styles/donationSignUp.css">
-        <script type="text/javascript" src="scripts/home.js"></script>
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/donationSignUp.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>
+        <script type="text/javascript" src="js/navbar.js"></script>
     </head>
-    <body style="background-image:url('Pictures/background.jpg')">
+    <body>
         <%@include file="checkLogin.jsp"%>
         <%-- Logon area div tag --%>
         <%------------------------%>
         <%------------------------%>
-        
-        <div id="logo-area">
-         <img style="margin:0px 500px;height:15%;width:27%;" src="Pictures/Logo.jpg" alt="Smiley face"> 
-        </div>
+        <header>
+            <div id="logo-area">
+                <img src="Pictures/Logo.png" alt="Smiley face"> 
+            </div>
+        </header>
         <%--==============================================================================================--%>
+
 
         <%-- navigation bar --%>
         <%@include file="navbar.jsp"%>
         <%--========================--%>
-       
+        <div id="mid-container">
+            <div id="left-section">
+                <div id="container"></div>
+            </div><!--
+            --><div id="middle-section">
+                <div id="form-conatiner"><form action="acquisitionProcess" id="donation-form">
+                        <input type="hidden" name="pageName" value="donation">
+                        <div>Select what want to acquire:</div>
+                        <select name="item"><option>Blood</option>
+                            <option value="0">Wheelchair</option>
+                            <option value="1">Crutches</option>
+                            <option value="2">Medicine</option>
+                            <option value="3">Other</option>
+                        </select>
+                        <div>Your ID card number:</div>
+                        <input name="contact-number" type="text"/>
+                        <div>Contact number:</div>
+                        <input name="area" type="text"/>
+                        <div>Select Area:</div>
+                        <select>
+                            <option>Colombo</option>
+                            <option>Gampaha</option>
+                            <option>Galle</option>
+                            <option>Matara</option>
+                            <option>Kurunegala</option>
+                        </select><br>
+                        <input type="submit" value="Sign up">
+                    </form> 
+                </div>
+            </div><!--
+            --><div id="right-section"></div><!--
+            --></div>
+
         <%--chat box goes here--%>
-        <div id="donation-form-container">
-        <%@include file="html-modules/acquisitionsignup.html"%>
-        </div>
-        <div>
-            <div id="chat-box">
-                <a id="chat-button" onclick="openchat()">Chat</a>
-                <%@include file="html-modules/chatarea.html"%>
+
+        <footer>
+            <div>
+                <div id="chat-box">
+                    <a id="chat-button" onclick="openchat()">Chat</a>
+                    <%@include file="html-modules/chatarea.html"%>
+                </div>
             </div>
-        </div>
+        </footer>
         <%--==================================================--%>
-        
+
     </body>
 </html>

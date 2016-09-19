@@ -4,10 +4,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link rel="stylesheet" href="styles/home.css">
-        <link rel="stylesheet" href="styles/navbar.css">
-        <link rel="stylesheet" href="styles/donationSignUp.css">
-        <script type="text/javascript" src="scripts/home.js"></script>
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/donationSignUp.css">
+        <script type="text/javascript" src="js/home.js"></script>
     </head>
     <body>
         <%@include file="checkLogin.jsp"%>

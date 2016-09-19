@@ -33,24 +33,3 @@ $(document).ready(function () {
     });
 });
 
-$(function () {
-    var body = $('body');
-    var backgrounds = [
-      'url(http://localhost:8080/ProjectNew/Pictures/background.jpg)', 
-      'url(http://localhost:8080/ProjectNew/Pictures/background2.jpg)',
-      'url(http://localhost:8080/ProjectNew/Pictures/background3.jpg)', 
-      'url(http://localhost:8080/ProjectNew/Pictures/background4.png)',
-      'url(http://localhost:8080/ProjectNew/Pictures/background5.jpg)'
-    ];
-    var current = 0;
-
-    function nextBackground() {
-        body.css(
-                'background',
-                backgrounds[current = ++current % backgrounds.length]);
-
-        setTimeout(nextBackground, 5000);
-    }
-    setTimeout(nextBackground, 5000);
-    body.css('background', backgrounds[0]);
-});
