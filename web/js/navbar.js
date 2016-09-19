@@ -20,8 +20,3 @@ $(document).ready(function () {
         return false;
     });
 });
-
-function loadWiki() {
-    $("#middle-section").load("cancer/cancer.jsp");
-    return false;
-}

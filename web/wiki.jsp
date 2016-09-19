@@ -1,12 +1,12 @@
 <%
     if (session.getAttribute("session") != null) {
 %>
-<%@include file="home.jsp"%>
+<jsp:forward page="homeWiki.jsp"/>
 <%
 } else {
 %>
-<%@include file="index.jsp"%>
+<jsp:forward page="indexWiki.jsp"/>
 <%
     }
 %>
-<%@include file="html-modules/wiki.html"%>
+

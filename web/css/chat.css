@@ -11,7 +11,7 @@
     background-color:black;
     width:250px;
     height:300px;
-    position:absolute;
+    position:fixed;
     bottom:0;
     right:0;
     border-style: inset;
@@ -28,9 +28,9 @@
 }
 #chat-header{
     border-top-left-radius: 6px;
-    background-color: royalblue;
     height:9%;
     width:100%;
+    background-color: #835e02;
 }
 
 #chat-title{
@@ -39,6 +39,7 @@
     width:87%;
     text-align: center;
     color: #f2f2f2;
+    background-color: #835e02;
 }
 
 #close-button{
@@ -48,7 +49,7 @@
     text-align: center;
     display:inline-block;
     color: #cccccc;
-    background-color: royalblue;
+    background-color:  #835e02;
     box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
     cursor:pointer;
     vertical-align:middle;

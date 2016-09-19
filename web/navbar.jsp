@@ -69,7 +69,7 @@
                 </li>
             </ul>
         </li>
-        <li><a onclick="loadWiki()" href="#">Wiki</a></li>
+        <li><a href="wiki.jsp">Wiki</a></li>
         <li><a href="#">Forum</a></li>
             <%if (session.getAttribute("session") != null) {%>
         <li><a href="#">Donations</a><span class="dropBottom"></span>
@@ -110,7 +110,7 @@
         <%if (session.getAttribute("session") != null) {%>
         <li id="logout-link" onclick="window.location='logout.jsp'"><img src="img/logout.png" width="25" height="25" style="left: 10px;float:right;"></li>
         
-        <li id="profile-link"><img src="img/profile.png" width="22" height="22" style="left: 10px;float:right;"></li>
+        <li id="profile-link" onclick="window.location='profile.jsp'"><img src="img/profile.png" width="22" height="22" style="left: 10px;float:right;"></li>
             <%}%>
     </ul>
 </nav>
