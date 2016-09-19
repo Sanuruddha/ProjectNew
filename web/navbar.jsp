@@ -108,7 +108,7 @@
         <%}%>
 
         <%if (session.getAttribute("session") != null) {%>
-        <li id="logout-link"><img src="img/logout.png" width="25" height="25" style="left: 10px;float:right;"></li>
+        <li id="logout-link" onclick="window.location='logout.jsp'"><img src="img/logout.png" width="25" height="25" style="left: 10px;float:right;"></li>
         
         <li id="profile-link"><img src="img/profile.png" width="22" height="22" style="left: 10px;float:right;"></li>
             <%}%>
