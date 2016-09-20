@@ -16,7 +16,7 @@
             <div id="top-area">
 
                 <div id="logo-area">
-                    <img style="margin-left:400px;height:15%;width:27%" src="Pictures/Logo.png" alt="Logo"> 
+                    <img style="margin-left:400px;height:15%;width:27%" src="img/Logo.png" alt="Logo"> 
                 </div>
                 <%@include file="navbar.jsp" %>
 
@@ -32,7 +32,7 @@
             %>
         </div>
         <section id="mid-container">
-            <div id="left-section"></div><!--
+            <div id="left-section"><%@include file="html-modules/wikinav.html"%></div><!--
             --><div id="middle-section"><%@include file="html-modules/wiki.html"%></div><!--
             --><div id="right-section">
                 <div>

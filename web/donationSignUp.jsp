@@ -19,7 +19,7 @@
         <%------------------------%>
         <header>
             <div id="logo-area">
-                <img src="Pictures/Logo.png" alt="Smiley face"> 
+                <img src="img/Logo.png" alt="Smiley face"> 
             </div>
         </header>
         <%--==============================================================================================--%>

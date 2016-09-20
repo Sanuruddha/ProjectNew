@@ -36,7 +36,7 @@
 body{
     min-width: 960px;
     margin:0px 0px;
-    background-image:url('../Pictures/background.jpg');
+    background-image:url('../img/background.jpg');
 }
 
 #logo-area{

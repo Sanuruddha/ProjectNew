@@ -19,7 +19,7 @@
         <%------------------------%>
         <header>
             <div id="logo-area">
-                <img src="Pictures/Logo.png" alt="Smiley face"> 
+                <img src="img/Logo.png" alt="Smiley face"> 
             </div>
         </header>
         <%--==============================================================================================--%>
@@ -29,7 +29,7 @@
         <%@include file="navbar.jsp"%>
         <%--========================--%>
         <div id="mid-container">
-            <div id="left-section"></div><!--
+            <div id="left-section"><%@include file="html-modules/wikinav.html"%></div><!--
             --><div id="middle-section"><%@include file="html-modules/wiki.html"%></div><!--
             --><div id="right-section"></div><!--
             --></div>
