@@ -17,6 +17,8 @@
 
                 <div id="logo-area">
                     <img style="margin-left:400px;height:15%;width:27%" src="img/Logo.png" alt="Logo"> 
+                    <div id="error-popup"></div>
+                    <div id="down-arrow"></div>
                 </div>
                 <%@include file="navbar.jsp" %>
 
@@ -25,7 +27,9 @@
             <%
                 if (session.getAttribute("invalidlogin") != null) {
                     if (session.getAttribute("invalidlogin").equals("TRUE")) {
-                        out.println("<script>document.getElementById('para').innerHTML = 'Wrong credentials!';</script>");
+                        out.println("<script>document.getElementById('error-popup').innerHTML = 'Wrong credentials! Try again!';"
+                                + "document.getElementById('error-popup').style.visibility='visible';"
+                                + "document.getElementById('down-arrow').style.visibility='visible';</script>");
                         session.setAttribute("invalidlogin", "FALSE");
                     }
                 }

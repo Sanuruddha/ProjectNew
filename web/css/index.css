@@ -43,7 +43,34 @@ body{
     float:top;
     width:100%;
     padding: 20px 0px;
+    position: relative;
 
+}
+
+#error-popup{
+    text-align: center;
+    line-height: 3;
+    position:absolute;
+    bottom:12px;
+    right:0;
+    background-color:  #d8794a;
+    height: 50px;
+    width:200px;
+    border-radius: 10px;
+    visibility: hidden;
+    color: #333333;
+}
+
+#down-arrow{
+    visibility: hidden;
+    position:absolute;
+    bottom:0;
+    right:25px;
+    width: 0px;
+    height: 0px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 12px solid #d8794a;
 }
 
 #top{
