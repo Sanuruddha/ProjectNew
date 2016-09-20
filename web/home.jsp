@@ -11,6 +11,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
         <script type="text/javascript" src="js/navbar.js"></script>
+        <script type="text/javascript" src="js/chat.js"></script>
     </head>
     <body>
         <%@include file="checkLogin.jsp"%>

@@ -1,8 +1,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        
+        <link rel="stylesheet" href="css/navbar.css">   
+        <link rel="stylesheet" href="css/wiki.css">  
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBpAHX4Ft-NYxXOV4C28-BfGLnZgDaVHTg"></script>
         <script src="js/registerform.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -39,8 +39,9 @@
                     <div id="link-box"><tr>
                         <table><tr>
                                 <td colspan="2"><a href="recoveraccount.jsp">Forgotten your account?</a></td>
-                                <td colspan="2"><a href="#" onclick="openNav()">Create account</a></td>
+                                
                             </tr>
+                            <tr><td colspan="2"><a href="#" onclick="openNav()">Create account</a></td></tr>
                         </table></div>
                 </div>
             </div><!--

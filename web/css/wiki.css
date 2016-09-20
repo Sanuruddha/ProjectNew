@@ -1,0 +1,30 @@
+#left-section{
+    background-color: transparent;
+    border-right: solid 2px;
+    border-right-color: #999999;
+    width:200px;
+    
+    z-index: 0;
+    position: absolute;
+}
+
+#right-section{
+    right:0;
+    position: absolute;
+}
+
+#mid-conatainer{
+    position: absolute;
+    z-index: 0;
+}
+
+#middle-section{
+    z-index: 0;
+    font-size: 20px;
+}
+
+#middle-section div{
+    left:0px;
+    position: absolute;
+}
+    

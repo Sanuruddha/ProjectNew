@@ -43,8 +43,9 @@
                     <div id="link-box"><tr>
                         <table><tr>
                                 <td colspan="2"><a href="recoveraccount.jsp">Forgotten your account?</a></td>
-                                <td colspan="2"><a href="#" onclick="openNav()">Create account</a></td>
+                                
                             </tr>
+                            <tr><td colspan="2"><a href="#" onclick="openNav()">Create account</a></td></tr>
                         </table></div>
                 </div>
             </div><!--

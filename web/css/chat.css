@@ -14,6 +14,7 @@
     position:fixed;
     bottom:0;
     right:0;
+    z-index: 4;
     border-style: inset;
     border-width: 1px;
 }
