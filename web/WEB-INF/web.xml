@@ -6,15 +6,15 @@
     </context-param>
     <servlet>
         <servlet-name>chatprocess</servlet-name>
-        <servlet-class>chat.chatprocess</servlet-class>
+        <servlet-class>chat.ChatProcess</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>doctors</servlet-name>
-        <servlet-class>other.doctors</servlet-class>
+        <servlet-class>other.Doctors</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>donationProcess</servlet-name>
-        <servlet-class>other.donationProcess</servlet-class>
+        <servlet-class>other.DonationProcess</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>

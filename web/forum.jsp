@@ -1,12 +1,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="styles/loginform.css">
-        <script src="js/registerform.js"></script>
-        <link rel="stylesheet" href="css/registerform.css">
+        <link rel="stylesheet" href="css/navigationBar.css">
+        <script src="js/registerForm.js"></script>
+        <link rel="stylesheet" href="css/registerForm.css">
     </head>
-    <body style="background-image:url('Pictures/background.jpg')">
+    <body style="background-image:url('img/background.jpg')">
         <%
             if(session.getAttribute("session")!=null){
         %>

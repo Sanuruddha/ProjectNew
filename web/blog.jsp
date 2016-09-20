@@ -5,8 +5,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/donationSignUp.css">
+        <link rel="stylesheet" href="css/navigationBar.css">
+        <link rel="stylesheet" href="css/donationSignup.css">
         <script type="text/javascript" src="js/home.js"></script>
     </head>
     <body>
@@ -16,12 +16,12 @@
         <%------------------------%>
         
         <div id="logo-area">
-         <img style="margin:0px 500px;height:15%;width:27%;" src="Pictures/Logo.jpg" alt="Smiley face"> 
+         <img style="margin:0px 500px;height:15%;width:27%;" src="img/Logo.jpg" alt="LOGO"> 
         </div>
         <%--==============================================================================================--%>
 
         <%-- navigation bar --%>
-        <%@include file="navbar.jsp"%>
+        <%@include file="navigationBar.jsp"%>
         <%--========================--%>
        
         <%--chat box goes here--%>
@@ -31,7 +31,7 @@
         <div>
             <div id="chat-box">
                 <a id="buttonlink" onclick="openchat()">Chat</a>
-                <%@include file="html-modules/chatarea.html"%>
+                <%@include file="html-modules/chatArea.html"%>
             </div>
         </div>
         <%--==================================================--%>

@@ -3,5 +3,4 @@
         session.setAttribute("redirect","TRUE");
         response.sendRedirect("index.jsp");
     }
-
 %>

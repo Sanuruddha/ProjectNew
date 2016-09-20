@@ -6,11 +6,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/navigationBar.css">
         <link rel="stylesheet" href="css/donationForm.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
-        <script type="text/javascript" src="js/navbar.js"></script>
+        <script type="text/javascript" src="js/navigationBar.js"></script>
     </head>
     <body>
         <%@include file="checkLogin.jsp"%>
@@ -19,14 +19,14 @@
         <%------------------------%>
         <header>
             <div id="logo-area">
-                <img src="Pictures/Logo.png" alt="Smiley face"> 
+                <img src="img/Logo.png" alt="LOGO"> 
             </div>
         </header>
         <%--==============================================================================================--%>
 
 
         <%-- navigation bar --%>
-        <%@include file="navbar.jsp"%>
+        <%@include file="navigationBar.jsp"%>
         <%--========================--%>
         <div id="mid-container">
             <div id="left-section"></div><!--
@@ -40,7 +40,7 @@
             <div>
                 <div id="chat-box">
                     <a id="chat-button" onclick="openchat()">Chat</a>
-                    <%@include file="html-modules/chatarea.html"%>
+                    <%@include file="html-modules/chatArea.html"%>
                 </div>
             </div>
         </footer>

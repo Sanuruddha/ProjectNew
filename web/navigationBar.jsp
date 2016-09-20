@@ -74,14 +74,14 @@
             <%if (session.getAttribute("session") != null) {%>
         <li><a href="#">Donations</a><span class="dropBottom"></span>
             <ul>
-                <li><a href="donationSignUp.jsp">Sign up to donate</a></li>
-                <li><a href="acquisitionSignUp.jsp">Sign up to aquire</a></li>
+                <li><a href="donationSignup.jsp">Sign up to donate</a></li>
+                <li><a href="acquisitionSignup.jsp">Sign up to aquire</a></li>
             </ul>
         </li>
         <%}%>
         <%if (session.getAttribute("session") == null) {%>
         <li ID="loginform" style="float:right">
-            <form action="loginprocess.jsp" method="post">
+            <form action="loginProcess.jsp" method="post">
                 <table>
                     <tr>
                         <td>
