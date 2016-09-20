@@ -1,0 +1,39 @@
+#donation-form{
+    position: absolute;
+    margin-left: 140px;
+    margin-right: auto;
+    margin-top: 100px;
+    height:300px;
+    width:400px;
+    border-radius: 5px;
+    background-color: #f6b132;
+    color: #000;
+    text-align: center;
+    padding:10px;
+    opacity: 0.9;
+}
+
+#form-conatiner{
+    z-index: -1;
+}
+
+#donation-form input,select{
+    margin:10px 10px;
+}
+
+#donation-form input[type="submit"]{
+    border: #c58300;
+    border-style: outset;
+    border-width:1px;
+    padding: 5px 20px;
+    border-radius: 6px;
+    color: white;
+    background-color: #593F01;
+}
+
+#donation-form input[type="submit"]:hover{
+    background-color:  #c58300;
+}
+#donation-form input[type="submit"]:active{
+    border-style: inset;
+}
