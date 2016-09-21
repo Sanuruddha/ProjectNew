@@ -20,3 +20,7 @@ $(document).ready(function () {
         return false;
     });
 });
+
+function loadWiki(type,id){
+    window.location='http://localhost:8080/ProjectNew/wiki.jsp?id='+id+'&type='+type;
+}

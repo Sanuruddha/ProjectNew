@@ -9,7 +9,7 @@
             <ul>
                 <li><a id="cancer" href="#">Cancer</a><span class="dropRight"></span>
                     <ul>
-                        <li><a class="description" href="#">Description</a></li>
+                        <li><a class="description" onclick="loadWiki('cancer','Des')">Description</a></li>
                         <li><a class="symptoms" href="#">Symptoms</a></li>
                         <li><a class="causes" href="#">Causes</a></li>
                         <li><a class="precautions" href="#">Precautions</a></li>

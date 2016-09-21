@@ -33,7 +33,7 @@
         </div>
         <section id="mid-container">
             <div id="left-section"><%@include file="html-modules/wikinav.html"%></div><!--
-            --><div id="middle-section"><%@include file="html-modules/wiki.html"%></div><!--
+            --><div id="middle-section"></div><!--
             --><div id="right-section">
                 <div>
                     <div id="link-box"><tr>
