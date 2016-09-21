@@ -53,26 +53,30 @@ body{
     text-align: center;
     line-height: 3;
     position:absolute;
-    bottom:12px;
+    bottom:20px;
     right:0;
-    background-color:  #d8794a;
+    background-color: powderblue;
     height: 50px;
     width:200px;
     border-radius: 10px;
     visibility: hidden;
-    color: #333333;
+    color: #ff0000;
+    opacity: 0;
+    transition: 1s;
 }
 
 #down-arrow{
     visibility: hidden;
     position:absolute;
-    bottom:0;
+    bottom:8px;
     right:25px;
     width: 0px;
     height: 0px;
     border-left: 13px solid transparent;
     border-right: 13px solid transparent;
-    border-top: 12px solid #d8794a;
+    border-top: 12px solid powderblue;
+    opacity: 0;
+    transition: 1s;
 }
 
 #top{
@@ -82,13 +86,16 @@ body{
 #link-box{
     position:absolute;
     display:block;
-    width:337px;
+    width: inherit;
     background-color: #888;
     border-radius: 6px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 
+#right-section>div{
+    width:100%;
+}
 #link-box td{
     
     text-align: center;

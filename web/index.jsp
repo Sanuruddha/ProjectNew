@@ -29,7 +29,11 @@
                     if (session.getAttribute("invalidlogin").equals("TRUE")) {
                         out.println("<script>document.getElementById('error-popup').innerHTML = 'Wrong credentials! Try again!';"
                                 + "document.getElementById('error-popup').style.visibility='visible';"
-                                + "document.getElementById('down-arrow').style.visibility='visible';</script>");
+                                + "document.getElementById('down-arrow').style.visibility='visible';"
+                                + "document.getElementById('error-popup').style.opacity='0.8';"
+                                + "document.getElementById('down-arrow').style.opacity='0.8';"
+                                + "document.getElementById('error-popup').style.bottom='12';"
+                                + "document.getElementById('down-arrow').style.bottom='0';</script>");
                         session.setAttribute("invalidlogin", "FALSE");
                     }
                 }
