@@ -94,7 +94,7 @@ body{
 }
 
 #right-section>div{
-    width:100%;
+    width:inherit;
 }
 #link-box td{
     
